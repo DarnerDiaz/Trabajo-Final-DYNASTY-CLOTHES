@@ -4,7 +4,7 @@
 
 ## Cómo Reportar Bugs
 
-Usa [GitHub Issues](https://github.com/DarnerDiaz/ecommerce-store/issues) para reportar bugs.
+Usa [GitHub Issues](https://github.com/DarnerDiaz/E-Commerce-Store/issues) para reportar bugs.
 
 **Incluye:**
 - Descripción clara del problema
@@ -15,7 +15,7 @@ Usa [GitHub Issues](https://github.com/DarnerDiaz/ecommerce-store/issues) para r
 
 ## Cómo Sugerir Mejoras
 
-- Abre un [GitHub Issue](https://github.com/DarnerDiaz/ecommerce-store/issues)
+- Abre un [GitHub Issue](https://github.com/DarnerDiaz/E-Commerce-Store/issues)
 - Describe la necesidad/mejora
 - Explica por qué crees que es útil
 - Proporciona ejemplos
@@ -24,8 +24,8 @@ Usa [GitHub Issues](https://github.com/DarnerDiaz/ecommerce-store/issues) para r
 
 1. **Fork el Proyecto**
 ```bash
-git clone https://github.com/DarnerDiaz/ecommerce-store.git
-cd ecommerce-store
+git clone https://github.com/DarnerDiaz/E-Commerce-Store.git
+cd E-Commerce-Store
 ```
 
 2. **Crea una Rama**
@@ -149,7 +149,7 @@ Antes de hacer PR:
 
 ## Preguntas
 
-- 💬 Abre una [Discusión](https://github.com/DarnerDiaz/ecommerce-store/discussions)
+- 💬 Abre una [Discusión](https://github.com/DarnerDiaz/E-Commerce-Store/discussions)
 - 📧 Email: soporte@tienda.com
 
 ## Código de Conducta

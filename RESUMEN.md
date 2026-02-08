@@ -55,7 +55,7 @@
 2. Haz click en **Settings** (Configuración)
 3. En **Repository name** cambia:
    - De: `Trabajo-Final-CERTUS`
-   - A: `ecommerce-store` (o el nombre que prefieras)
+   - A: `E-Commerce-Store` (o el nombre que prefieras)
 4. Haz click en **Rename**
 
 ### Opción 2: Con Comandos Git
@@ -74,7 +74,7 @@ git branch -u origin/main
 ## 📊 Estructura Final
 
 ```
-ecommerce-store/
+E-Commerce-Store/
 ├── 📁 js/
 │   ├── app.js              ✅ Reutilizable
 │   ├── carrito.js          ✅ Reutilizable
@@ -101,7 +101,7 @@ ecommerce-store/
 
 ## 🔗 Enlaces Útiles
 
-- GitHub: https://github.com/usuario/ecommerce-store
+- GitHub: https://github.com/DarnerDiaz/E-Commerce-Store
 - Documentación: Lee README.md
 - Instalación: Ve a SETUP.md
 - Contribuir: Lee CONTRIBUTING.md

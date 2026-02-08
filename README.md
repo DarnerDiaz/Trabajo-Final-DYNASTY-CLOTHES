@@ -43,7 +43,7 @@ Una plataforma e-commerce completa y moderna construida con HTML5, CSS3 y JavaSc
 ## 📁 Estructura del Proyecto
 
 ```
-📦 ecommerce-store/
+📦 E-Commerce-Store/
 ├── 📄 index.html                 # Página principal
 ├── 📄 checkout.html              # Página de checkout
 ├── 📄 register.html              # Página de registro
@@ -75,8 +75,8 @@ Una plataforma e-commerce completa y moderna construida con HTML5, CSS3 y JavaSc
 
 1. **Clonar el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/ecommerce-store.git
-cd ecommerce-store
+git clone https://github.com/DarnerDiaz/E-Commerce-Store.git
+cd E-Commerce-Store
 ```
 
 2. **Abrir en el navegador**
@@ -243,7 +243,7 @@ Este proyecto está bajo la licencia MIT. Ver archivo `LICENSE` para más detall
 ¿Preguntas o problemas? 
 
 - 📧 Email: soporte@tienda.com
-- 💬 Issues: [GitHub Issues](https://github.com/tu-usuario/ecommerce-store/issues)
+- 💬 Issues: [GitHub Issues](https://github.com/DarnerDiaz/E-Commerce-Store/issues)
 - 📖 Documentación: Ver `SETUP.md`
 
 ## 🎉 Agradecimientos

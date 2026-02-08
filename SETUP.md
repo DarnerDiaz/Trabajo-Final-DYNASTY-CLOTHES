@@ -5,8 +5,8 @@
 ### Paso 1: Clonar el repositorio
 
 ```bash
-git clone https://github.com/DarnerDiaz/ecommerce-store.git
-cd ecommerce-store
+git clone https://github.com/DarnerDiaz/E-Commerce-Store.git
+cd E-Commerce-Store
 ```
 
 ### Paso 2: Abrir el proyecto
@@ -314,7 +314,7 @@ Y en `index.html` línea ~76, actualiza el filtro:
 2. **Habilita GitHub Pages**
   - Ve a Settings → Pages
   - Source: main branch
-  - URL automática: `https://DarnerDiaz.github.io/Trabajo-Final-CERTUS`
+  - URL automática: `https://DarnerDiaz.github.io/E-Commerce-Store`
 
 3. **Dominio personalizado**
    - Compra dominio (GoDaddy, Namecheap)

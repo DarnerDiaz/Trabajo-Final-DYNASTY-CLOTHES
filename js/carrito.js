@@ -1,8 +1,12 @@
 // ───────────────────────────────────────────────────────────────────
-// CARRITO DE COMPRAS - CARRITO.JS
+// E-COMMERCE CARRITO.JS
 // Gestión del carrito modal y operaciones
 // ───────────────────────────────────────────────────────────────────
 
+/**
+ * Clase que gestiona el carrito de compras
+ * Maneja apertura/cierre del modal, operaciones de cantidad y eliminación
+ */
 class Carrito {
   constructor() {
     this.verCarrito = document.getElementById('verCarrito');

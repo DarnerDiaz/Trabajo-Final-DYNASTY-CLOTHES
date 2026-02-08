@@ -1,8 +1,12 @@
 // ───────────────────────────────────────────────────────────────────
-// REGISTRO - REGISTER.JS
+// E-COMMERCE REGISTER.JS
 // Gestión del formulario de registro de usuario
 // ───────────────────────────────────────────────────────────────────
 
+/**
+ * Clase que gestiona el registro de nuevos usuarios
+ * Validaciones, creación de cuenta y almacenamiento de datos
+ */
 class RegisterManager {
   constructor() {
     this.form = document.getElementById('registerForm');

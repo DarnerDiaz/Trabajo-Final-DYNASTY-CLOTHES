@@ -1,8 +1,12 @@
 // ───────────────────────────────────────────────────────────────────
-// CHECKOUT - CHECKOUT.JS
+// E-COMMERCE CHECKOUT.JS
 // Gestión del formulario de checkout y procesamiento de pedidos
 // ───────────────────────────────────────────────────────────────────
 
+/**
+ * Clase que gestiona el proceso de checkout
+ * Validación de formularios, cálculo de totales y procesamiento de pedidos
+ */
 class CheckoutManager {
   constructor() {
     this.carrito = JSON.parse(localStorage.getItem('carrito')) || [];

@@ -1,8 +1,12 @@
 // ───────────────────────────────────────────────────────────────────
-// TIENDA DE ROPA - APP.JS
+// E-COMMERCE APP.JS
 // Gestión de productos, búsqueda y filtros
 // ───────────────────────────────────────────────────────────────────
 
+/**
+ * Clase principal que gestiona la tienda
+ * Maneja renderizado de productos, filtros, búsqueda y carrito
+ */
 class TiendaApp {
   constructor() {
     this.shopContent = document.getElementById('shopContent');

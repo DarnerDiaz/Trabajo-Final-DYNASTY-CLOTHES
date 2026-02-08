@@ -1,5 +1,6 @@
 // ───────────────────────────────────────────────────────────────────
-// UTILIDADES Y FUNCIONES GLOBALES
+// E-COMMERCE UTILS.JS
+// Utilidades y funciones globales reutilizables
 // ───────────────────────────────────────────────────────────────────
 
 const TOAST_DURATION = 3000;

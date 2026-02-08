@@ -1,8 +1,12 @@
 // ───────────────────────────────────────────────────────────────────
-// LOGIN - LOGIN.JS
+// E-COMMERCE LOGIN.JS
 // Gestión del formulario de login
 // ───────────────────────────────────────────────────────────────────
 
+/**
+ * Clase que gestiona la autenticación de usuarios
+ * Login, validaciones y gestión de sesiones
+ */
 class LoginManager {
   constructor() {
     this.form = document.getElementById('loginForm');

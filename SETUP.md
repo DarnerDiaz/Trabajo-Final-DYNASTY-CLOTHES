@@ -314,7 +314,7 @@ Y en `index.html` línea ~76, actualiza el filtro:
 2. **Habilita GitHub Pages**
   - Ve a Settings → Pages
   - Source: main branch
-  - URL automática: `https://DarnerDiaz.github.io/repo-name`
+  - URL automática: `https://DarnerDiaz.github.io/Trabajo-Final-CERTUS`
 
 3. **Dominio personalizado**
    - Compra dominio (GoDaddy, Namecheap)

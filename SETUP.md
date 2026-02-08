@@ -5,7 +5,7 @@
 ### Paso 1: Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/ecommerce-store.git
+git clone https://github.com/DarnerDiaz/ecommerce-store.git
 cd ecommerce-store
 ```
 
@@ -312,9 +312,9 @@ Y en `index.html` línea ~76, actualiza el filtro:
    ```
 
 2. **Habilita GitHub Pages**
-   - Ve a Settings → Pages
-   - Source: main branch
-   - URL automática: `https://tu-usuario.github.io/repo-name`
+  - Ve a Settings → Pages
+  - Source: main branch
+  - URL automática: `https://DarnerDiaz.github.io/repo-name`
 
 3. **Dominio personalizado**
    - Compra dominio (GoDaddy, Namecheap)

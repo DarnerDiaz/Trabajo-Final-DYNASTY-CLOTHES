@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Crea tu cuenta en Dinasty Clothes" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Crear Cuenta - Dinasty Clothes</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="nav-container">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+            <h1 class="navbar-logo">DINASTY</h1>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Register Container -->
+    <main class="auth-container">
+      <div class="auth-card register-card">
+        <div class="auth-header">
+          <h1>Crea tu Cuenta</h1>
+          <p>Únete a nuestra comunidad y disfruta de beneficios exclusivos</p>
+        </div>
+
+        <form id="registerForm" class="auth-form">
+          <!-- Nombre -->
+          <div class="form-group">
+            <label for="firstName">Nombre *</label>
+            <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                placeholder="Tu nombre"
+                required 
+              />
+            </div>
+          </div>
+
+          <!-- Apellido -->
+          <div class="form-group">
+            <label for="lastName">Apellido *</label>
+            <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                placeholder="Tu apellido"
+                required 
+              />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="tu@email.com"
+                required 
+              />
+            </div>
+            <small class="help-text">Usaremos esto para tu cuenta y comunicaciones</small>
+          </div>
+
+          <!-- Teléfono -->
+          <div class="form-group">
+            <label for="phone">Teléfono *</label>
+            <div class="input-group">
+              <i class="fas fa-phone"></i>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="+1 (555) 123-4567"
+                required 
+              />
+            </div>
+          </div>
+
+          <!-- Género (opcional) -->
+          <div class="form-group">
+            <label>Género (opcional)</label>
+            <div class="gender-options">
+              <label class="radio-option">
+                <input type="radio" name="gender" value="male" />
+                <span><i class="fas fa-mars"></i> Masculino</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" value="female" />
+                <span><i class="fas fa-venus"></i> Femenino</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" value="other" />
+                <span><i class="fas fa-genderless"></i> Otro</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Contraseña -->
+          <div class="form-group">
+            <label for="password">Contraseña *</label>
+            <div class="input-group password-group">
+              <i class="fas fa-lock"></i>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Mínimo 8 caracteres"
+                required 
+              />
+              <button type="button" class="toggle-password" data-input="password">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            <small class="help-text">Debe contener mayúsculas, minúsculas y números</small>
+          </div>
+
+          <!-- Confirmar Contraseña -->
+          <div class="form-group">
+            <label for="confirmPassword">Confirmar Contraseña *</label>
+            <div class="input-group password-group">
+              <i class="fas fa-lock"></i>
+              <input 
+                type="password" 
+                id="confirmPassword" 
+                name="confirmPassword" 
+                placeholder="Repite la contraseña"
+                required 
+              />
+              <button type="button" class="toggle-password" data-input="confirmPassword">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Preferencias -->
+          <div class="form-section">
+            <label class="checkbox-option">
+              <input type="checkbox" id="newsletter" name="newsletter" checked />
+              <span>Quiero recibir ofertas y promociones por email</span>
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" id="terms" name="terms" required />
+              <span>Acepto los <a href="#" target="_blank">Términos y Condiciones</a> y la <a href="#" target="_blank">Política de Privacidad</a> *</span>
+            </label>
+          </div>
+
+          <!-- Botones de acción -->
+          <button type="submit" class="btn-primary btn-large">
+            <i class="fas fa-user-plus"></i> Crear Cuenta
+          </button>
+
+          <div class="auth-divider">O</div>
+
+          <button type="button" class="btn-social google-btn">
+            <i class="fab fa-google"></i> Registrarse con Google
+          </button>
+          <button type="button" class="btn-social facebook-btn">
+            <i class="fab fa-facebook-f"></i> Registrarse con Facebook
+          </button>
+
+          <!-- Link a Login -->
+          <div class="auth-footer">
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+          </div>
+        </form>
+
+        <!-- Beneficios -->
+        <div class="auth-benefits">
+          <h3>Beneficios de tu cuenta</h3>
+          <ul>
+            <li><i class="fas fa-check"></i> Acceso a ofertas exclusivas</li>
+            <li><i class="fas fa-check"></i> Programa de puntos y recompensas</li>
+            <li><i class="fas fa-check"></i> Historial de compras</li>
+            <li><i class="fas fa-check"></i> Envíos más rápidos</li>
+            <li><i class="fas fa-check"></i> Soporte prioritario</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Dinasty Clothes. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

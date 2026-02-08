@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout - Finaliza tu compra en Dinasty Clothes" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Checkout - Dinasty Clothes</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="nav-container">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+            <h1 class="navbar-logo"><i class="fas fa-arrow-left"></i> DINASTY</h1>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <button class="ver-carrito" id="verCarrito" aria-label="Ver carrito">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cantidadCarrito" class="cantidad-carrito"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Checkout Container -->
+    <main class="checkout-container">
+      <div class="checkout-wrapper">
+        <!-- Formulario de Checkout -->
+        <div class="checkout-form-section">
+          <h1>Finalizar Compra</h1>
+          
+          <!-- Progreso -->
+          <div class="checkout-progress">
+            <div class="progress-step active">
+              <span class="step-number">1</span>
+              <span class="step-label">Datos</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step">
+              <span class="step-number">2</span>
+              <span class="step-label">Envío</span>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step">
+              <span class="step-number">3</span>
+              <span class="step-label">Pago</span>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <form id="checkoutForm" class="checkout-form">
+            <!-- Información Personal -->
+            <section class="form-section">
+              <h2><i class="fas fa-user"></i> Información Personal</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">Nombre *</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Apellido *</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Teléfono *</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+            </section>
+
+            <!-- Dirección de Envío -->
+            <section class="form-section">
+              <h2><i class="fas fa-map-marker-alt"></i> Dirección de Envío</h2>
+              <div class="form-group">
+                <label for="address">Calle y Número *</label>
+                <input type="text" id="address" name="address" placeholder="Ej: Calle Principal 123" required />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">Ciudad *</label>
+                  <input type="text" id="city" name="city" required />
+                </div>
+                <div class="form-group">
+                  <label for="state">Provincia/Estado *</label>
+                  <input type="text" id="state" name="state" required />
+                </div>
+                <div class="form-group">
+                  <label for="zipCode">Código Postal *</label>
+                  <input type="text" id="zipCode" name="zipCode" required />
+                </div>
+              </div>
+            </section>
+
+            <!-- Método de Envío -->
+            <section class="form-section">
+              <h2><i class="fas fa-truck"></i> Método de Envío</h2>
+              <div class="shipping-options">
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="standard" checked />
+                  <div class="shipping-info">
+                    <span class="shipping-method">Envío Estándar</span>
+                    <span class="shipping-time">3-5 días hábiles</span>
+                  </div>
+                  <span class="shipping-price">$9.99</span>
+                </label>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="express" />
+                  <div class="shipping-info">
+                    <span class="shipping-method">Envío Express</span>
+                    <span class="shipping-time">1-2 días hábiles</span>
+                  </div>
+                  <span class="shipping-price">$24.99</span>
+                </label>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="overnight" />
+                  <div class="shipping-info">
+                    <span class="shipping-method">Envío Nocturno</span>
+                    <span class="shipping-time">Próximo día</span>
+                  </div>
+                  <span class="shipping-price">$49.99</span>
+                </label>
+              </div>
+            </section>
+
+            <!-- Método de Pago -->
+            <section class="form-section">
+              <h2><i class="fas fa-credit-card"></i> Método de Pago</h2>
+              <div class="payment-methods">
+                <label class="payment-method">
+                  <input type="radio" name="paymentMethod" value="card" checked />
+                  <span><i class="fas fa-credit-card"></i> Tarjeta de Crédito/Débito</span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="paymentMethod" value="paypal" />
+                  <span><i class="fab fa-paypal"></i> PayPal</span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="paymentMethod" value="transfer" />
+                  <span><i class="fas fa-university"></i> Transferencia Bancaria</span>
+                </label>
+              </div>
+
+              <!-- Datos de Tarjeta (mostrado solo si está seleccionada) -->
+              <div id="cardPaymentForm" class="card-payment-form">
+                <div class="form-group">
+                  <label for="cardName">Nombre en la Tarjeta *</label>
+                  <input type="text" id="cardName" name="cardName" placeholder="Como aparece en la tarjeta" />
+                </div>
+                <div class="form-group">
+                  <label for="cardNumber">Número de Tarjeta *</label>
+                  <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="expiryDate">Vencimiento (MM/AA) *</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="12/25" maxlength="5" />
+                  </div>
+                  <div class="form-group">
+                    <label for="cvv">CVV *</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4" />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Términos -->
+            <section class="form-section">
+              <label class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required />
+                <span>He leído y acepto los <a href="#" target="_blank">Términos y Condiciones</a> y la <a href="#" target="_blank">Política de Privacidad</a> *</span>
+              </label>
+            </section>
+
+            <!-- Botones de acción -->
+            <div class="form-actions">
+              <a href="index.html" class="btn-secondary">
+                <i class="fas fa-arrow-left"></i> Volver
+              </a>
+              <button type="submit" class="btn-primary">
+                <i class="fas fa-lock"></i> Completar Compra
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Resumen de Compra (Sidebar) -->
+        <aside class="checkout-summary">
+          <h2>Resumen de tu Compra</h2>
+          
+          <div id="cartItems" class="cart-items">
+            <!-- Se llena dinámicamente -->
+          </div>
+
+          <!-- Desglose de precios -->
+          <div class="price-breakdown">
+            <div class="price-row">
+              <span>Subtotal:</span>
+              <span id="subtotal">$0.00</span>
+            </div>
+            <div class="price-row">
+              <span>Envío:</span>
+              <span id="shippingCost">$9.99</span>
+            </div>
+            <div class="price-row">
+              <span>Impuestos (10%):</span>
+              <span id="taxes">$0.00</span>
+            </div>
+            <div class="price-row divider">
+              <span>Total:</span>
+              <span id="total" class="total-amount">$0.00</span>
+            </div>
+          </div>
+
+          <!-- Protección de compra -->
+          <div class="protection-badge">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <p class="badge-title">Compra Segura</p>
+              <p class="badge-text">Tus datos están protegidos con cifrado SSL</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Modal Container for Cart -->
+    <div id="modal-container" class="modal-container" role="dialog" aria-hidden="true"></div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Dinasty Clothes. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/checkout.js"></script>
+    <script src="./js/carrito.js"></script>
+  </body>
+</html>

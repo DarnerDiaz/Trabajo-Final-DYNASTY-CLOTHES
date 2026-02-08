@@ -4,33 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dinasty Clothes - Tienda de ropa de calidad con los mejores estilos. Descubre nuestra exclusiva colección de prendas para hombre." />
+    <meta name="keywords" content="ropa, tienda online, camisetas, pantalones, sudaderas, moda" />
+    <meta name="author" content="Dinasty Clothes" />
+    <meta name="theme-color" content="#000" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Dinasty Clothes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Dinasty Clothes - Tienda de Ropa Online</title>
   </head>
   <body>
-    <!--navBar-->
-    <div class="nav-container">
+    <!-- Navigation Bar -->
+    <header class="nav-container">
       <nav class="navbar">
-        <h1 class="navbar-logo">DINASTY</h1>
-        <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+        <div class="navbar-brand">
+          <h1 class="navbar-logo">DINASTY</h1>
+          <p class="navbar-tagline">Estilo en la Piel</p>
+        </div>
+        <div class="navbar-middle">
+          <div class="search-container">
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-input" 
+              placeholder="Buscar productos..." 
+              aria-label="Buscar productos"
+            />
+            <button class="search-btn" aria-label="Enviar búsqueda"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <button class="ver-carrito" id="verCarrito" aria-label="Ver carrito">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cantidadCarrito" class="cantidad-carrito"></span>
+          </button>
+          <div class="auth-buttons">
+            <a href="register.html" class="btn-register" title="Crear cuenta">
+              <i class="fas fa-user-plus"></i>
+              <span>Registrarse</span>
+            </a>
+          </div>
+        </div>
       </nav>
-    </div>
+    </header>
 
-    <!--banner-->
-    <div class="banner">
+    <!-- Hero Banner -->
+    <section class="banner">
+      <div class="banner-overlay"></div>
       <div class="banner-container">
-        <h1>Dinasty Clothes</h1>
-        <p>estilo en la piel</p>
+        <h1 class="banner-title">Dinasty Clothes</h1>
+        <p class="banner-subtitle">Estilo en la Piel</p>
+        <p class="banner-description">Descubre nuestra colección exclusiva de moda para hombre</p>
       </div>
-    </div>
+    </section>
 
-    <!--shop content-->
-    <div id="shopContent" class="shop-content"></div>
+    <!-- Filters Section -->
+    <section class="filters-section">
+      <div class="filters-container">
+        <h2>Filtrar Productos</h2>
+        <div class="filter-group">
+          <label for="priceFilter">Rango de Precio:</label>
+          <input type="range" id="priceFilter" min="0" max="100" value="100" />
+          <span id="priceValue">Hasta $100</span>
+        </div>
+        <div class="filter-group">
+          <label for="categoryFilter">Categoría:</label>
+          <select id="categoryFilter" aria-label="Filtrar por categoría">
+            <option value="">Todas las categorías</option>
+            <option value="camisetas">Camisetas</option>
+            <option value="pantalones">Pantalones</option>
+            <option value="accesorios">Accesorios</option>
+          </select>
+        </div>
+        <button class="reset-filters" id="resetFilters">Limpiar Filtros</button>
+      </div>
+    </section>
 
-    <!--modal container-->
-    <div id="modal-container" class="modal-container"></div>
+    <!-- Shop Content -->
+    <main id="shopContent" class="shop-content" role="main"></main>
+
+    <!-- Modal Container for Cart -->
+    <div id="modal-container" class="modal-container" role="dialog" aria-hidden="true"></div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>Email: info@dinasty.com</p>
+          <p>Teléfono: +1 (555) 123-4567</p>
+        </div>
+        <div class="footer-section">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#shipping">Envíos</a></li>
+            <li><a href="#returns">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="#facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Dinasty Clothes. Todos los derechos reservados.</p>
+      </div>
+    </footer>
 
     <script src="./js/products.js"></script>
+    <script src="./js/utils.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/carrito.js"></script>
   </body>
